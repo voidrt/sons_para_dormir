@@ -1,0 +1,26 @@
+name: sons_para_dormir
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.5.1
+  google_fonts: ^7.0.2
+  just_audio: ^0.10.5
+  just_audio_background: ^0.0.1-beta.17
+  riverpod_annotation: ^4.0.0
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio/

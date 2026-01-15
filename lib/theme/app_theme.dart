@@ -5,20 +5,20 @@ import 'text_theme.dart';
 
 class TrackMyPetTheme {
   static final themeData = ThemeData.dark().copyWith(
-    colorScheme: const ColorScheme.light().copyWith(
+    colorScheme: const ColorScheme.dark().copyWith(
       primary: AppColors.blue,
       secondary: AppColors.secondary,
       surface: AppColors.black,
-      onSurfaceVariant: AppColors.white,
-      onSurface: AppColors.onBackground,
       inverseSurface: AppColors.black,
+      onSurface: AppColors.onBackground,
     ),
     textTheme: TextTheme(
       labelMedium: PetTrackTextStyle.subtitleText,
       bodyMedium: PetTrackTextStyle.bodyText,
       headlineMedium: PetTrackTextStyle.headlineText,
     ),
-    scaffoldBackgroundColor: AppColors.background,
+    scaffoldBackgroundColor: AppColors.blackVariant,
+
     appBarTheme: AppBarTheme(foregroundColor: AppColors.black),
     splashColor: Colors.transparent,
     highlightColor: Colors.transparent,

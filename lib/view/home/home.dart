@@ -41,22 +41,38 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           child: ScaffoldWithBackgroundGradient(
             body: Column(
               children: [
+                Spacer(),
                 SizedBox(
                   width: constraints.maxWidth,
                   height: constraints.maxHeight / 2,
                   child: TabBarView(
                     children: [
-                      AudioCard(player: _player, audio: audioList[0]),
-                      AudioCard(player: _player, audio: audioList[1]),
-                      AudioCard(player: _player, audio: audioList[2]),
-                      AudioCard(player: _player, audio: audioList[2]),
+                      AudioCard(
+                        player: _player,
+                        audio: audioList[0],
+                        constraints: constraints,
+                      ),
+                      AudioCard(
+                        player: _player,
+                        audio: audioList[1],
+                        constraints: constraints,
+                      ),
+                      AudioCard(
+                        player: _player,
+                        audio: audioList[2],
+                        constraints: constraints,
+                      ),
+                      AudioCard(
+                        player: _player,
+                        audio: audioList[2],
+                        constraints: constraints,
+                      ),
                     ],
                   ),
                 ),
                 Spacer(),
                 SizedBox(
                   height: constraints.maxHeight / 10,
-
                   child: TabBar(
                     tabs: [
                       Tab(icon: Icon(Icons.waves)),

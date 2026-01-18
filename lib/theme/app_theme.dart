@@ -3,7 +3,7 @@ import 'package:sons_para_dormir/theme/paddings.dart';
 import 'colors.dart';
 import 'text_theme.dart';
 
-class TrackMyPetTheme {
+class SonsParaDormirTheme {
   static final themeData = ThemeData.dark().copyWith(
     colorScheme: const ColorScheme.dark().copyWith(
       primary: AppColors.blue,
@@ -18,7 +18,13 @@ class TrackMyPetTheme {
       headlineMedium: PetTrackTextStyle.headlineText,
     ),
     scaffoldBackgroundColor: AppColors.blackVariant,
-
+    tabBarTheme: TabBarThemeData().copyWith(
+      dividerColor: Colors.transparent,
+      indicatorColor: AppColors.secondary,
+      indicatorSize: TabBarIndicatorSize.tab,
+      labelColor: AppColors.primary,
+      unselectedLabelColor: AppColors.secondary,
+    ),
     appBarTheme: AppBarTheme(foregroundColor: AppColors.black),
     splashColor: Colors.transparent,
     highlightColor: Colors.transparent,
